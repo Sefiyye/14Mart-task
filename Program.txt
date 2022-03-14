@@ -1,0 +1,17 @@
+using System;
+
+namespace ConsoleApp21
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book Book = new Book("Elxan Elatli", "Roman",20,2000);
+
+            NewsPaper Newspaper = new NewsPaper("Advertisement", "Müstəqil Azərbaycanın qurucusu", 25, 2020);
+
+            Book.sell();
+            NewsPaper.sell();
+        }
+    }
+}

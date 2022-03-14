@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp20
+{
+    internal class Book: Product
+    {
+        public string Author;
+        public string Genre;
+
+        public Book(string Author, string Genre, int Price, int ReleaseData, int Count) : base (Price, ReleaseData, Count)
+        {
+            this.Author = Author;
+            this.Genre = Genre;
+        }
+    }
+}

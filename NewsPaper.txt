@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp21
+{
+    internal class NewsPaper: Product
+    {
+        public string Advertisement;
+        public string Article;
+
+        public NewsPaper(string Advertisement, string Article, int Price, int ReleaseData, int Count) : base(Price, ReleaseData,Count)
+        {
+            this.Advertisement = Advertisement;
+            this.Article = Article;
+            Console.WriteLine($"Advertisement: {Advertisement} Article: {Article} Price: {Price} ReleaseData: {ReleaseData} Count: {Count}");
+        }
+    }
+}

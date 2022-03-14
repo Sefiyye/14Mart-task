@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApp20
+{
+    internal class Product
+    {
+        public int Price;
+        public int ReleaseData;
+        public int Count;
+
+        public Product(int Price, int ReleaseData, int Count)
+        {
+            this.Price = Price;
+            this.ReleaseData = ReleaseData;
+            this.Count = Count;
+        }
+        public void sell()
+        {
+            Count--;
+            if (Count == 0)
+            {
+                Console.WriteLine("Satis prosesi heyata kecmedi");
+            }
+        }
+    }
+}
